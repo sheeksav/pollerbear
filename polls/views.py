@@ -6,9 +6,9 @@ from polls.models import Poll
 # Create your views here.
 
 def index(request):
-	latest_poll_list = Poll.objects.order_by('-pub_date')[:5]
-	context = {'latest_poll_list': latest_poll_list}
-	return render(request, 'polls/index.html', context)
+    latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
+    context = {'latest_poll_list': latest_poll_list}
+    return render(request, 'polls/index.html', context)
 
 
 def detail(request, poll_id):
