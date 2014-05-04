@@ -6,4 +6,7 @@ from django.http import HttpResponse
 def index(request):
 	return HttpResponse("Hello, world. You're at the poll index.")
 
+def about(request):
+	return HttpResponse("Pollerbear is the most totally rad web-poll app in America. Maybe the world.")
+
 
