@@ -1,0 +1,7 @@
+*.log
+*.pot
+*.pyc
+*.back
+*.db
+.DS_STORE
+
